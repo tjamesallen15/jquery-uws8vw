@@ -1,0 +1,60 @@
+<head>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      let x = 0;
+      const y = 10;
+
+      // x = x + 5;
+      x++; // add 1 to the value. x = x + 1
+      x += 5; // x = x + 5
+      x += 1; // x++
+
+      // x = 5; //
+
+      x -= 1;
+      x--;
+
+      x *= 5;
+
+      x += y;
+
+      x = x + y;
+
+      x = y;
+
+      x = 0;
+
+      for (let i = 0; i < y; i++) {
+        x = x + 1;
+        // i = 10
+        $('body').append(`<p>${x}</p<`);
+      }
+
+      let z = ['Glenlie', 'James', 'Genessa'];
+      // $('body').html(`<p>${z.length}<p>`);
+      // console.log(z[0]);
+      // $('body').html(`<p>${z[0]}<p>`);
+
+      // $('body').html(`<p>${z[0]}<p>`);
+
+      for (let q = 0; q < z.length; q++) {
+        $('body').append(`<p>${z[q]}</p<`);
+      }
+
+      let property = { name: 'Solano', owner: 'Phinma' };
+
+      $('body').append(`<p>${property.owner}</p<`);
+
+      let r = 'Glenlie';
+    });
+  </script>
+</head>
+<body>
+  <h1>Test</h1>
+  <!-- <p id="test"><strong style="color: #f00">It does not work</strong></p> -->
+</body>
