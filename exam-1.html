@@ -1,0 +1,46 @@
+<head>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      let users = [];
+      users.push({
+        firstName: 'James',
+        lastName: 'Tadique',
+        position: 'Developer',
+        age: 25,
+      });
+
+      users.push({
+        firstName: 'Genessa',
+        lastName: 'Tadique',
+        position: 'Tester',
+        age: 24,
+      });
+
+      users.push({
+        firstName: 'Glenlie',
+        lastName: 'Orillo',
+        position: 'Tester',
+        age: 21,
+      });
+
+      // Use a loop and list down all of the data inside the Array users
+      // Example Data to be appended  "James Tadique - Developer, 21"
+      // Code below this line.
+      for (let x = 0; x < users.length; x++) {
+        let property = users[x];
+        $('body').append(`<p>${property.firstName}</p>`);
+        $('body').append(`<p>${property.lastName}</p>`);
+        $('body').append(`<p>${property.position}</p>`);
+        $('body').append(`<p>${property.age}</p>`);
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1>Tutorial</h1>
+</body>
